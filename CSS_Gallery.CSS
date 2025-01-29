@@ -1,0 +1,48 @@
+:root {
+    --Primary-color: #0D0D0D;
+    --Secondary-color: #F0F0E5;
+    --Thirdy-color: #D92525;
+}
+@font-face {
+    font-family: 'FirstFont';
+    src: url(ClashDisplay-Variable.ttf);
+  }
+.block {
+    align-items: center;
+    max-width: 1224px;
+    width: 100%;
+    margin: auto;
+    padding: 40px 0;
+}
+.Photo-Gallery{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.Photo img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: .3s;
+}
+@media screen and (max-width: 768px) {
+    .block {
+        position: relative;
+        max-width: 768px;
+        width: 50%;
+        margin: auto;
+        padding: 50px auto;
+    }
+    .Photo-Gallery{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .Photo img {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+    }
+}

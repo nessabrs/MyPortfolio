@@ -1,0 +1,71 @@
+:root {
+    --Primary-color: #0D0D0D;
+    --Secondary-color: #F0F0E5;
+    --Thirdy-color: #D92525;
+}
+@font-face {
+    font-family: 'FirstFont';
+    src: url(ClashDisplay-Variable.ttf);
+  }
+  
+.skill{
+    width:50%;
+    margin: 100px auto;
+    color: var(--Primary-color);
+    font-family: 'FirstFont';
+    font-size: 15px;
+}
+.rating-bar{
+    background:var(--Secondary-color);
+    border:2px solid var(--Primary-color);
+    padding:3px;
+}
+.rating-bar span{
+    display:block;
+    height:15px;
+}
+.rating-bar, .rating-bar span {
+    border-radius:50px; 
+}
+.rate-1{ width:85%; }
+.rate-2{ width:75%; }
+.rate-3{ width:70%; }
+.rate-4{ width:70%; }
+.rate-5{ width:60%; }
+.rate-6{ width:70%; }
+.rate-7{ width:80%; }
+.rate-8{ width:50%; }
+
+.animate{
+    background-color: var(--Primary-color);
+    animation: progress 1s linear;
+    -moz-animation: progress 1s linear;
+    -webkit-animation: progress 1s linear;
+    -ms-animation: progress 1s linear;
+    -o-animation: progress 1s linear;
+}
+@-webkit-keyframes progress {
+    from { width:0% }
+    to { width:100%; }
+}
+@-moz-keyframes progress {
+    from { width:0% }
+    to { width:100%; }
+}
+@-ms-keyframes progress {
+    from { width:0% }
+    to { width:100%; }
+}
+@-o-keyframes progress {
+    from { width:0% }
+    to { width:100%; }
+}
+@keyframes progress {
+    from { width:0% }
+    to { width:100%; }
+}
+@media screen and (max-width: 768px){
+    .skill{
+        width:85%;
+    }
+}

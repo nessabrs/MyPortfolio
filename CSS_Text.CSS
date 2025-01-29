@@ -1,0 +1,127 @@
+:root {
+    --Primary-color: #0D0D0D;
+    --Secondary-color: #F0F0E5;
+    --Thirdy-color: #D92525;
+  }
+  @font-face {
+    font-family: 'FirstFont';
+    src: url(ClashDisplay-Variable.ttf);
+  }
+  @font-face {
+    font-family: 'SecondFont';
+    src: url(Centers\ George.ttf);
+  }
+.Title {
+    cursor: pointer;
+    max-width: 100%;
+    margin: 250px auto;
+    background: transparent;
+    text-align: center;
+    color: var(--Primary-color);
+    font-family: 'SecondFont';
+    font-size: 50px;
+  }
+.Title :hover{
+    transition: all .3s ease-in-out;
+    color: var(--Thirdy-color);
+}
+.get-in-touch {
+  max-width: 650px;
+  margin: -50 auto;
+  position: relative;
+  top: 50%;
+  text-align: center;
+  color: var(--Primary-color);
+  font-family: 'SecondFont';
+}
+.Profile {
+    cursor: pointer;
+    max-width: 100%;
+    margin: 100px auto;
+    background: transparent;
+    text-align: center;
+    color: var(--Primary-color);
+    font-family: 'FirstFont';
+    font-size: 20px;
+}
+.Profile :hover{
+    transition: all .3s ease-in-out;
+    color: var(--Thirdy-color);
+}
+.Text01 {
+    cursor: pointer;
+    max-width: 100%;
+    margin: 100px auto;
+    background: transparent;
+    text-align: center;
+    color: var(--Primary-color);
+    font-family: 'FirstFont';
+    font-size: 20px;
+}
+.Text01 :hover{
+    transition: all .3s ease-in-out;
+    color: var(--Thirdy-color);
+}
+
+.scroll-msg {
+  position: relative;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  padding-top: 0px;
+}
+.scroll-msg > div:nth-child(1) {
+  margin-top: 0px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  font-family: 'FirstFont';
+  font-size: 20px;
+}
+.arrow-animated {
+  font-size: 25px;
+  animation: arrow-float 1s infinite;
+}
+
+@keyframes arrow-float {
+  0% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+  }
+  60% {
+      transform: translateY(50%);
+      animation-timing-function: ease-in-out;
+  }
+  100% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+  }
+}
+@media screen and (max-width: 768px){
+    .Title {
+        max-width: 70%;
+        margin: 250px auto;
+        background: transparent;
+        text-align: center;
+        align-items: center;
+        font-size: 35px;
+      }
+    .Profile {
+        max-width: 70%;
+        text-align: start;
+    }
+    .Text01 {
+        max-width: 70%;
+        background: transparent;
+        text-align: start;
+
+    }
+    .Text02 {
+        max-width: 70%;
+        background: transparent;
+        text-align: start;
+
+    }
+}
